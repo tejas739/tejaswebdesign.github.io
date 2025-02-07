@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css">
+    <!-- Black Prism Theme -->
+    <link rel="stylesheet" href="footer.css">
+    <!-- Link to Font Awesome footer fb insta ... -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* header1 design */
+        .headerr {
+            background-color: #333;
+            /* Dark background */
+            color: #ddd;
+            /* Light text */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 90px;
+            height: 9rem;
+        }
+
+        .headerr .info {
+            font-size: 40px;
+        }
+
+        .headerr .links {
+            display: flex;
+            gap: 100px;
+        }
+
+        .headerr .links a {
+            text-decoration: none;
+            color: #6495ED;
+            /* Blue color */
+            /* font-weight: bold; */
+            font-size: 50px;
+        }
+
+        .headerr .links a:hover {
+            color: #035afc;
+        }
+
+
+        /* navbar design */
+        .navbarr {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 90px;
+            background-color: #fff;
+            height: 15rem;
+
+        }
+
+        .navbarr .logo {
+            font-size: 66px;
+            font-weight: bold;
+            color: rgb(249, 9, 185);
+            font-family: 'Roboto Slab', serif;
+            letter-spacing: 3px;
+        }
+
+        .navbarr .nav-links {
+            display: flex;
+            gap: 90px;
+        }
+
+        .navbarr .nav-links a {
+            text-decoration: none;
+            color: black;
+            font-size: 39px;
+            font-weight: bold;
+        }
+
+        .navbarr .nav-links a:hover {
+            color: blue;
+        }
+
+        .h1 {
+            font-size: 30px;
+            text-align: center;
+            margin-top: 6%;
+            margin-bottom: 6%;
+        }
+
+        .f1 {
+            margin-bottom: 5%;
+        }
+
+        .f2 {
+            margin-bottom: 5%;
+        }
+
+        .f3 {
+            margin-bottom: 5%;
+        }
+
+        .f4 {
+            margin-bottom: 5%;
+        }
+
+
+        /* Style for the copy button */
+        .copy-btn {
+            /* position: sticky; */
+            background-color: #0984e3;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 48%;
+            font-size: 33px;
+        }
+
+        .copy-btn:hover {
+            background-color: #74b9ff;
+        }
+
+        /* Styling for the pre and code block */
+        pre.language-css {
+            position: relative;
+            background-color: #2d3436;
+            /* Dark background */
+            color: #dfe6e9;
+            /* Light text color */
+            font-family: 'Courier New', monospace;
+            font-size: 39px;
+            border-radius: 5px;
+            line-height: 1.5;
+            overflow-x: auto;       
+            margin-left: 20%;
+            margin-right: 20%;
+            padding: 6%;
+        }
+
+        pre.language-css code {
+            /* display: block; */
+            white-space: pre-wrap;
+            word-break: break-word;
+           
+        }
+
+        /* Styling the button inside the container */
+        pre.language-css+.copy-btn {
+            /* position: absolute; */
+            top: 10px;
+            right: 10px;
+        }
+
+        /* .t{
+            background-color: red;
+        } */
+
+
+        /* Styling for the pre and code block */
+        pre.language-html {
+            position: relative;
+            background-color: #2d3436;
+            /* Dark background */
+            color: #dfe6e9;
+            /* Light text color */
+            font-family: 'Courier New', monospace;
+            font-size: 39px;
+            border-radius: 5px;
+            line-height: 1.5;
+            overflow-x: auto;
+            margin-left: 20%;
+            margin-right: 20%;
+            padding: 6%;
+        }
+
+        pre.language-html code {
+            /* display: block; */
+            white-space: pre-wrap;
+            word-break: break-word;
+        }
+
+        /* Styling the button inside the container */
+        pre.language-html+.copy-btn {
+            /* position: absolute; */
+            top: 10px;
+            right: 10px;
+        }
+
+        /* next prev button */
+        .navigation-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 200px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .buttonn {
+            padding: 20px;
+            text-decoration: none;
+            /* Removes underline from links */
+            font-size: 45px;
+            font-weight: bold;
+            color: white;
+            background-color: #0457fd;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .buttonn:hover {
+            background-color: #4177d0;
+            transform: scale(1.05);
+        }
+
+        .arrow {
+            font-size: 45px;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+    </style>
+    <!-- prism script here -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <!-- footer1 script here -->
+    <script>
+        function copyToClipboard() {
+            const code = document.querySelector('#f1');
+            const range = document.createRange();
+            range.selectNode(code);
+            window.getSelection().addRange(range);
+
+            try {
+                document.execCommand('copy');
+                alert('Code copied to clipboard!');
+            } catch (err) {
+                alert('Failed to copy code');
+            }
+
+            window.getSelection().removeAllRanges();
+        }
+    </script>
+    <script>
+        function copyToClipboar() {
+            const code = document.querySelector('#f2');
+            const range = document.createRange();
+            range.selectNode(code);
+            window.getSelection().addRange(range);
+
+            try {
+                document.execCommand('copy');
+                alert('Code copied to clipboard!');
+            } catch (err) {
+                alert('Failed to copy code');
+            }
+
+            window.getSelection().removeAllRanges();
+        }
+    </script>
+    <script>
+        function copyToClipboa() {
+            const code = document.querySelector('#f3');
+            const range = document.createRange();
+            range.selectNode(code);
+            window.getSelection().addRange(range);
+
+            try {
+                document.execCommand('copy');
+                alert('Code copied to clipboard!');
+            } catch (err) {
+                alert('Failed to copy code');
+            }
+
+            window.getSelection().removeAllRanges();
+        }
+    </script>
+    <script>
+        function copyToClipbo() {
+            const code = document.querySelector('#f4');
+            const range = document.createRange();
+            range.selectNode(code);
+            window.getSelection().addRange(range);
+
+            try {
+                document.execCommand('copy');
+                alert('Code copied to clipboard!');
+            } catch (err) {
+                alert('Failed to copy code');
+            }
+
+            window.getSelection().removeAllRanges();
+        }
+    </script>
+
+</head>
+
+<body>
+    <!-- header section -->
+    <div class="headerr">
+        <div class="info">Learn Web Design: Free trial with expert-led courses.</div>
+        <div class="links">
+            <a href="#">SIGN IN</a>
+            <a href="#">SIGN UP</a>
+        </div>
+    </div>
+
+    <!-- navbar section -->
+    <div class="navbarr">
+        <div class="logo">TEJAS WEB DESIGN</div>
+        <div class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="nav.html">NAVBAR</a>
+            <a href="main.html">MAIN</a>
+            <a href="footer.html">FOOTER</a>
+            <a href="#">CONTACT</a>
+        </div>
+    </div>
+    <hr>
+
+    <div class="h1">
+        <h1>Footer Design & Source Code here !</h1>
+    </div>
+
+    <!-- first footer design here -->
+    <div class="footer1">
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>MAKA AGENCY</h3>
+                    <ul>
+                        <li><a href="#">Vacancy</a></li>
+                        <li><a href="#">Noyification</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>POWER</h3>
+                    <ul>
+                        <li><a href="#">Pillar Page</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>LEARN MORE</h3>
+                    <ul>
+                        <li><a href="#">Webinars</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>BLOG</h3>
+                    <ul>
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Blog Post</a></li>
+                        <li><a href="#">Author Page</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>PORTFOLIO</h3>
+                    <ul>
+                        <li><a href="#">Overview Grid 01</a></li>
+                        <li><a href="#">Overview Grid 02</a></li>
+                        <li><a href="#">Overview Masonry</a></li>
+                        <li><a href="#">Overview List</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>LANDING PAGE</h3>
+                    <ul>
+                        <li><a href="#">Big Form</a></li>
+                        <li><a href="#">Event</a></li>
+                        <li><a href="#">Quote</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2022 maka Agency - All rights reserved | <a href="#">Terms of Use</a> | <a href="#">Privacy
+                        Policy</a></p>
+            </div>
+        </footer>
+    </div>
+
+    <div class="f1">
+        <pre><code class="language-html" id="f1">
+
+&lt;div class="footer1"&gt;
+    &lt;footer class="footer"&gt;
+        &lt;div class="footer-container"&gt;
+            &lt;div class="footer-column"&gt;
+                &lt;h3&gt;MAKA AGENCY&lt;/h3&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Vacancy&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Notification&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Documentation&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class="footer-column"&gt;
+                &lt;h3&gt;POWER&lt;/h3&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Pillar Page&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Portfolio&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Jobs&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Pricing&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class="footer-column"&gt;
+                &lt;h3&gt;LEARN MORE&lt;/h3&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Webinars&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Resources&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;FAQs&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Events&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class="footer-column"&gt;
+                &lt;h3&gt;BLOG&lt;/h3&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Overview&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Blog Post&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Author Page&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Newsletter&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class="footer-column"&gt;
+                &lt;h3&gt;PORTFOLIO&lt;/h3&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Overview Grid 01&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Overview Grid 02&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Overview Masonry&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Overview List&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class="footer-column"&gt;
+                &lt;h3&gt;LANDING PAGE&lt;/h3&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Big Form&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Event&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Quote&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="footer-bottom"&gt;
+            &lt;p&gt;&amp;copy; 2022 MAKA Agency - All rights reserved | &lt;a href="#"&gt;Terms of Use&lt;/a&gt; | &lt;a href="#"&gt;Privacy Policy&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/footer&gt;
+&lt;/div&gt;
+        </code></pre>
+
+        <!-- Copy Button -->
+        <button class="copy-btn" onclick="copyToClipboard()">Copy Code</button>
+    </div>
+
+    <div class="f2">
+        <pre><code class="language-css" id="f2">
+            .footer1 {
+                margin-top: 2%;
+                margin-bottom: 2%;
+                width: 66%;
+                margin-left: 17%;
+                font-size: 27px;
+            }
+            
+            .footer {
+                background-color: #1a1a1a;
+                color: #d1d1d1;
+                padding: 40px 20px;
+            }
+            
+            .footer-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                gap: 20px;
+            }
+            
+            .footer-column {
+                flex: 1 1 200px;
+                min-width: 150px;
+            }
+            
+            .footer-column h3 {
+                color: #ffffff;
+                margin-bottom: 10px;
+                font-size: 27px;
+            }
+            
+            .footer-column ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            
+            .footer-column ul li {
+                margin: 8px 0;
+            }
+            
+            .footer-column ul li a {
+                text-decoration: none;
+                color: #d1d1d1;
+                transition: color 0.3s;
+            }
+            
+            .footer-column ul li a:hover {
+                color: #00aaff;
+            }
+            
+            .footer-bottom {
+                text-align: center;
+                margin-top: 20px;
+                border-top: 1px solid #333;
+                padding-top: 10px;
+                font-size: 14px;
+            }
+            
+            .footer-bottom a {
+                color: #d1d1d1;
+                text-decoration: none;
+                margin: 0 5px;
+            }
+            
+            .footer-bottom a:hover {
+                color: #00aaff;
+            }
+            </code></pre>
+
+
+        <!-- Copy Button -->
+        <button class="copy-btn" onclick="copyToClipboar()">Copy Code</button>
+    </div>
+    <hr>
+
+
+    <!-- second footer design here -->
+    <div class="footer2">
+        <footer class="footer2">
+            <div class="footer2-container">
+                <div class="footer2-download">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Example.jpg" alt="App Logo">
+                    <a href="#">Download the Etsy App</a>
+                </div>
+                <div class="footer2-column">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="#">Gift cards</a></li>
+                        <li><a href="#">Etsy Registry</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">Etsy blog</a></li>
+                        <li><a href="#">Etsy United Kingdom</a></li>
+                        <li><a href="#">Etsy Germany</a></li>
+                        <li><a href="#">Etsy Canada</a></li>
+                    </ul>
+                </div>
+                <div class="footer2-column">
+                    <h3>Sell</h3>
+                    <ul>
+                        <li><a href="#">Sell on Etsy</a></li>
+                        <li><a href="#">Teams</a></li>
+                        <li><a href="#">Forums</a></li>
+                        <li><a href="#">Affiliates & Creators</a></li>
+                    </ul>
+                </div>
+                <div class="footer2-column">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">Etsy, Inc.</a></li>
+                        <li><a href="#">Policies</a></li>
+                        <li><a href="#">Investors</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Impact</a></li>
+                    </ul>
+                </div>
+                <div class="footer2-column">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Settings</a></li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="#">&#xf16d;</a>
+                        <a href="#">&#xf09a;</a>
+                        <a href="#">&#xf0d2;</a>
+                        <a href="#">&#xf099;</a>
+                        <a href="#">&#xf167;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer2-bottom">
+                <p>&copy; 2024 Etsy, Inc. | <a href="#">Terms of Use</a> | <a href="#">Privacy</a> | <a
+                        href="#">Interest-based ads</a> | <a href="#">Local Shops</a> | <a href="#">Regions</a></p>
+            </div>
+        </footer>
+    </div>
+
+
+    <div class="f3">
+        <pre><code class="language-html" id="f3">
+&lt;div class="footer2"&gt;
+    &lt;footer class="footer2"&gt;
+        &lt;div class="footer2-container"&gt;
+            &lt;div class="footer2-download"&gt;
+                &lt;img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Example.jpg" alt="App Logo"&gt;
+                &lt;a href="#"&gt;Download the Etsy App&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="footer2-column"&gt;
+                &lt;h3&gt;Shop&lt;/h3&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Gift cards&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Etsy Registry&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Sitemap&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Etsy blog&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Etsy United Kingdom&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Etsy Germany&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Etsy Canada&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class="footer2-column"&gt;
+                &lt;h3&gt;Sell&lt;/h3&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Sell on Etsy&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Teams&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Forums&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Affiliates &amp; Creators&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class="footer2-column"&gt;
+                &lt;h3&gt;About&lt;/h3&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Etsy, Inc.&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Policies&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Investors&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Careers&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Press&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Impact&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class="footer2-column"&gt;
+                &lt;h3&gt;Help&lt;/h3&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Help Center&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Privacy Settings&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;div class="social-icons"&gt;
+                    &lt;a href="#"&gt;&#xf16d;&lt;/a&gt;
+                    &lt;a href="#"&gt;&#xf09a;&lt;/a&gt;
+                    &lt;a href="#"&gt;&#xf0d2;&lt;/a&gt;
+                    &lt;a href="#"&gt;&#xf099;&lt;/a&gt;
+                    &lt;a href="#"&gt;&#xf167;&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="footer2-bottom"&gt;
+            &lt;p&gt;&amp;copy; 2024 Etsy, Inc. | &lt;a href="#"&gt;Terms of Use&lt;/a&gt; | &lt;a href="#"&gt;Privacy&lt;/a&gt; | &lt;a href="#"&gt;Interest-based ads&lt;/a&gt; | &lt;a href="#"&gt;Local Shops&lt;/a&gt; | &lt;a href="#"&gt;Regions&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/footer&gt;
+&lt;/div&gt;
+        </code></pre>
+
+        <!-- Copy Button -->
+        <button class="copy-btn" onclick="copyToClipboa()">Copy Code</button>
+    </div>
+
+    <div class="f4">
+        <pre><code class="language-css" id="f4">
+
+.footer2 {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    width: 66%;
+    margin-left: 17%;
+    font-size: 27px;
+    background-color: #001a73;
+    color: #ffffff;
+}
+
+.footer2-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 20px;
+}
+
+.footer2-column {
+    flex: 1 1 200px;
+    min-width: 150px;
+}
+
+.footer2-column h3 {
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.footer2-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer2-column ul li {
+    margin: 8px 0;
+}
+
+.footer2-column ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer2-column ul li a:hover {
+    color: #00aaff;
+}
+
+.footer2-download {
+    text-align: center;
+}
+
+.footer2-download img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.footer2-download a {
+    display: inline-block;
+    background-color: #00134d;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 21px;
+    margin-top: 10px;
+}
+
+.footer2-download a:hover {
+    background-color: #002080;
+}
+
+.footer2-bottom {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 21px;
+}
+
+.footer2-bottom a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer2-bottom a:hover {
+    color: #00aaff;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 5px;
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #00aaff;
+}
+
+        </code></pre>
+
+        <!-- Copy Button -->
+        <button class="copy-btn" onclick="copyToClipbo()">Copy Code</button>
+    </div>
+
+
+    <!-- next prev button -->
+    <div class="navigation-buttons">
+        <a href="main.html" class="buttonn prev">
+            <span class="arrow">
+                < </span> Prev
+        </a>
+        <a href="next.html" class="buttonn next">
+            Next <span class="arrow">></span>
+        </a>
+    </div>
+
+
+    <!--My website footer section here -->
+    <footer class="footerr">
+        <div class="footerr-sections">
+            <div class="footerr-column">
+                <h3>Get Started with AI</h3>
+                <ul>
+                    <li>AWS & DLAI GenAI with LLMs Course</li>
+                    <li>DLAI AI For Everyone Course</li>
+                    <li>Google AI Essentials Course</li>
+                    <li>Google Cloud Introduction to Generative AI Course</li>
+                    <li>Google Prompting Essentials</li>
+                    <li>IBM AI Engineering Professional Certificate</li>
+                    <li>IBM Generative AI Fundamentals Specialization</li>
+                    <li>IBM Introduction to Artificial Intelligence (AI)</li>
+                    <li>Stanford AI in Healthcare Specialization</li>
+                    <li>DLAI Supervised Machine Learning</li>
+                    <li>Vanderbilt Prompt Engineering for ChatGPT Course</li>
+                </ul>
+            </div>
+            <div class="footerr-column">
+                <h3>Popular Career Certificates</h3>
+                <ul>
+                    <li>Adobe Content Creator Professional Certificate</li>
+                    <li>Google Cybersecurity Professional Certificate</li>
+                    <li>Google Data Analytics Professional Certificate</li>
+                    <li>Google Digital Marketing Professional Certificate</li>
+                    <li>Google IT Support Professional Certificate</li>
+                    <li>Google Project Management Professional Certificate</li>
+                    <li>Google UX Design Professional Certificate</li>
+                    <li>IBM Data Science Professional Certificate</li>
+                    <li>Meta Front-End Developer Professional Certificate</li>
+                    <li>Microsoft Power BI Data Analyst Certificate</li>
+                    <li>All Career Certificates</li>
+                </ul>
+            </div>
+            <div class="footerr-column">
+                <h3>Popular Subjects</h3>
+                <ul>
+                    <li>Artificial Intelligence</li>
+                    <li>Cybersecurity</li>
+                    <li>Data Analytics</li>
+                    <li>Digital Marketing</li>
+                    <li>Generative AI</li>
+                    <li>Graphic Design</li>
+                    <li>Machine Learning</li>
+                    <li>Microsoft Excel</li>
+                    <li>Microsoft Power BI</li>
+                    <li>Python</li>
+                    <li>SQL</li>
+                    <li>All Courses</li>
+                </ul>
+            </div>
+            <div class="footerr-column">
+                <h3>Popular Resources</h3>
+                <ul>
+                    <li>High-Income Skills Worth Learning</li>
+                    <li>How to Get a PMP Certification</li>
+                    <li>Free IT Certifications and Courses</li>
+                    <li>Google Analytics Certification Benefits</li>
+                    <li>Popular Cybersecurity Certifications</li>
+                    <li>Popular Data Analytics Certifications</li>
+                    <li>Popular IT Certifications</li>
+                    <li>What Does a Data Analyst Do?</li>
+                    <li>What Is the CAPM Certification</li>
+                    <li>Career Insights & Advice Hub</li>
+                    <li>Career Tools & Resource Hub</li>
+                    <li>Career Aptitude Test</li>
+                </ul>
+            </div>
+        </div>
+        <!--Above link to Font Awesome footer fb insta ... -->
+        <div class="footerr-bottom">
+            <p>© 2025 TEJAS Inc. All rights reserved.</p>
+            <div class="sociall-icons">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+</body>
+
+</html>

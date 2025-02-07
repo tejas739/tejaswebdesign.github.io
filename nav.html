@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css">
+    <!-- Black Prism Theme -->
+    <link rel="stylesheet" href="nav.css">
+    <!-- Link to Font Awesome footer fb insta ... -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* header1 design */
+        .headerr {
+            background-color: #333;
+            /* Dark background */
+            color: #ddd;
+            /* Light text */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 90px;
+            height: 9rem;
+        }
+
+        .headerr .info {
+            font-size: 40px;
+        }
+
+        .headerr .links {
+            display: flex;
+            gap: 100px;
+        }
+
+        .headerr .links a {
+            text-decoration: none;
+            color: #6495ED;
+            /* Blue color */
+            /* font-weight: bold; */
+            font-size: 50px;
+        }
+
+        .headerr .links a:hover {
+            color: #035afc;
+        }
+
+
+        /* navbar design */
+        .navbarr {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 90px;
+            background-color: #fff;
+            height: 15rem;
+
+        }
+
+        .navbarr .logo {
+            font-size: 66px;
+            font-weight: bold;
+            color: rgb(249, 9, 185);
+            font-family: 'Roboto Slab', serif;
+            letter-spacing: 3px;
+        }
+
+        .navbarr .nav-links {
+            display: flex;
+            gap: 90px;
+        }
+
+        .navbarr .nav-links a {
+            text-decoration: none;
+            color: black;
+            font-size: 39px;
+            font-weight: bold;
+        }
+
+        .navbarr .nav-links a:hover {
+            color: blue;
+        }
+
+        .h1 {
+            font-size: 30px;
+            text-align: center;
+            margin-top: 6%;
+            margin-bottom: 6%;
+        }
+
+        .header1 {
+            margin-top: 2%;
+            margin-bottom: 2%;
+            width: 66%;
+            margin-left: 17%;
+        }
+
+        .p1 {
+            margin-bottom: 5%;
+        }
+
+        .p2 {
+            margin-bottom: 5%;
+        }
+
+        .header2 {
+            margin-top: 2%;
+            margin-bottom: 2%;
+            margin-left: 20%;
+            height: 1000px;
+        }
+
+        .p3 {
+            margin-bottom: 5%;
+        }
+
+        .p4 {
+            margin-bottom: 5%;
+        }
+
+
+        /* Style for the copy button */
+        .copy-btn {
+            /* position: sticky; */
+            background-color: #0984e3;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 48%;
+            font-size: 33px;
+        }
+
+        .copy-btn:hover {
+            background-color: #74b9ff;
+        }
+
+        /* Styling for the pre and code block */
+        pre.language-css {
+            position: relative;
+            background-color: #2d3436;
+            /* Dark background */
+            color: #dfe6e9;
+            /* Light text color */
+            font-family: 'Courier New', monospace;
+            font-size: 39px;
+            padding: 1rem;
+            border-radius: 5px;
+            line-height: 1.5;
+            overflow-x: auto;
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+
+        pre.language-css code {
+            /* display: block; */
+            white-space: pre-wrap;
+            word-break: break-word;
+        }
+
+        /* Styling the button inside the container */
+        pre.language-css+.copy-btn {
+            /* position: absolute; */
+            top: 10px;
+            right: 10px;
+        }
+
+        /* .t{
+            background-color: red;
+        } */
+
+
+        /* Styling for the pre and code block */
+        pre.language-html {
+            position: relative;
+            background-color: #2d3436;
+            /* Dark background */
+            color: #dfe6e9;
+            /* Light text color */
+            font-family: 'Courier New', monospace;
+            font-size: 39px;
+            padding: 1rem;
+            border-radius: 5px;
+            line-height: 1.5;
+            overflow-x: auto;
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+
+        pre.language-html code {
+            /* display: block; */
+            white-space: pre-wrap;
+            word-break: break-word;
+        }
+
+        /* Styling the button inside the container */
+        pre.language-html+.copy-btn {
+            /* position: absolute; */
+            top: 10px;
+            right: 10px;
+        }
+
+        /* next prev button */
+        .navigation-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 200px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .buttonn {
+            padding: 20px;
+            text-decoration: none;
+            /* Removes underline from links */
+            font-size: 45px;
+            font-weight: bold;
+            color: white;
+            background-color: #0457fd;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .buttonn:hover {
+            background-color: #4177d0;
+            transform: scale(1.05);
+        }
+
+        .arrow {
+            font-size: 45px;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script>
+        function copyToClipboard() {
+            const code = document.querySelector('.language-html code');
+            const range = document.createRange();
+            range.selectNode(code);
+            window.getSelection().addRange(range);
+
+            try {
+                document.execCommand('copy');
+                alert('Code copied to clipboard!');
+            } catch (err) {
+                alert('Failed to copy code');
+            }
+
+            window.getSelection().removeAllRanges();
+        }
+    </script>
+
+    <script>
+        function copyToClipboar() {
+            const code = document.querySelector('.language-css code');
+            const range = document.createRange();
+            range.selectNode(code);
+            window.getSelection().addRange(range);
+
+            try {
+                document.execCommand('copy');
+                alert('Code copied to clipboard!');
+            } catch (err) {
+                alert('Failed to copy code');
+            }
+
+            window.getSelection().removeAllRanges();
+        }
+    </script>
+
+    <script>
+        function copyToClipboa() {
+            const code = document.querySelector('.p3');
+            const range = document.createRange();
+            range.selectNode(code);
+            window.getSelection().addRange(range);
+
+            try {
+                document.execCommand('copy');
+                alert('Code copied to clipboard!');
+            } catch (err) {
+                alert('Failed to copy code');
+            }
+
+            window.getSelection().removeAllRanges();
+        }
+    </script>
+
+    <script>
+        function copyToClipbo() {
+            const code = document.querySelector('.p4');
+            const range = document.createRange();
+            range.selectNode(code);
+            window.getSelection().addRange(range);
+
+            try {
+                document.execCommand('copy');
+                alert('Code copied to clipboard!');
+            } catch (err) {
+                alert('Failed to copy code');
+            }
+
+            window.getSelection().removeAllRanges();
+        }
+    </script>
+
+</head>
+
+<body>
+    <!-- header section -->
+    <div class="headerr">
+        <div class="info">Learn Web Design: Free trial with expert-led courses.</div>
+        <div class="links">
+            <a href="#">SIGN IN</a>
+            <a href="#">SIGN UP</a>
+        </div>
+    </div>
+
+    <!-- navbar section -->
+    <div class="navbarr">
+        <div class="logo">TEJAS WEB DESIGN</div>
+        <div class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="nav.html">NAVBAR</a>
+            <a href="main.html">MAIN</a>
+            <a href="footer.html">FOOTER</a>
+            <a href="#">CONTACT</a>
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="h1">
+        <h1>Navbar Design & Source Code here !</h1>
+    </div>
+
+    <!-- header 1 -->
+    <div class="header1">
+        <header class="header">
+            <div class="container">
+                <div class="logo">
+                    <h1>MyLogo</h1>
+                </div>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <input type="text" placeholder="Search..." class="search-bar">
+                    <button class="cta-btn">Sign Up</button>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div class="p1">
+        <pre><code class="language-html">
+&lt;header class="header"&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="logo"&gt;
+            &lt;h1&gt;MyLogo&lt;/h1&gt;
+        &lt;/div&gt;
+        &lt;nav class="navbar"&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#services"&gt;Services&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+        &lt;div class="header-actions"&gt;
+            &lt;input type="text" placeholder="Search..." class="search-bar"&gt;
+            &lt;button class="cta-btn"&gt;Sign Up&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/header&gt;
+        </code></pre>
+
+        <!-- Copy Button -->
+        <button class="copy-btn" onclick="copyToClipboard()">Copy Code</button>
+    </div>
+
+
+
+    <div class="p2">
+        <pre><code class="language-css">
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 90px;
+    margin: 0 auto;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #ffcc00;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 5px 10px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin-right: 10px;
+    outline: none;
+    transition: border-color 0.3s;
+    height: 48px;
+}
+
+.search-bar:focus {
+    border-color: #ffcc00;
+}
+
+.cta-btn {
+    font-size: 24px;
+    height: 48px;
+    padding: 8px 15px;
+    background-color: #ffcc00;
+    color: #0056b3;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #fff;
+    color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    .navbar ul.active {
+        display: flex;
+        background-color: #0056b3;
+        padding: 10px 0;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .header-actions {
+        margin-top: 10px;
+    }
+}
+        </code></pre>
+        <!-- Copy Button -->
+        <button class="copy-btn" onclick="copyToClipboar()">Copy Code</button>
+    </div>
+    <hr class="hr">
+
+    <!-- header2 -->
+
+    <div class="header2">
+        <header class="sidebar">
+            <div class="logo">
+                <h1>MyLogo</h1>
+            </div>
+            <nav class="navbar2">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cta-container">
+                <button class="cta-btn">Sign Up</button>
+            </div>
+        </header>
+    </div>
+
+
+    <div class="p3">
+        <pre><code class="language-html">
+          &lt;div class="header2"&gt;
+         &lt;header class="sidebar"&gt;
+        &lt;div class="logo"&gt;
+            &lt;h1&gt;MyLogo&lt;/h1&gt;
+        &lt;/div&gt;
+        &lt;nav class="navbar2"&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#services"&gt;Services&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+        &lt;div class="cta-container"&gt;
+            &lt;button class="cta-btn"&gt;Sign Up&lt;/button&gt;
+        &lt;/div&gt;
+         &lt;/header&gt;
+       &lt;/div&gt;
+        </code></pre>
+        <button class="copy-btn" onclick="copyToClipboa()">Copy Code</button>
+    </div>
+
+
+    <div class="p4">
+        <pre><code class="language-css">
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #b3007d;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    font-size: 30px;
+}
+
+.logo h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.navbar2 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar2 ul li {
+    margin: 15px 0;
+}
+
+.navbar2 ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar2 ul li a:hover {
+    background-color: #ffcc00;
+}
+
+.cta-container {
+    margin-top: auto;
+}
+
+.cta-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffcc00;
+    color: #0056b3;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #fff;
+    color: #0056b3;
+}
+        </code></pre>
+        <button class="copy-btn" onclick="copyToClipbo()">Copy Code</button>
+    </div>
+
+
+    <!-- next prev button -->
+    <div class="navigation-buttons">
+        <a href="index.html" class="buttonn prev">
+            <span class="arrow"> <
+                  </span> Prev
+        </a>
+        <a href="main.html" class="buttonn next">
+            Next <span class="arrow">></span>
+        </a>
+    </div>
+
+
+    <!-- footer section here -->
+    <footer class="footer">
+        <div class="footer-sections">
+            <div class="footer-column">
+                <h3>Get Started with AI</h3>
+                <ul>
+                    <li>AWS & DLAI GenAI with LLMs Course</li>
+                    <li>DLAI AI For Everyone Course</li>
+                    <li>Google AI Essentials Course</li>
+                    <li>Google Cloud Introduction to Generative AI Course</li>
+                    <li>Google Prompting Essentials</li>
+                    <li>IBM AI Engineering Professional Certificate</li>
+                    <li>IBM Generative AI Fundamentals Specialization</li>
+                    <li>IBM Introduction to Artificial Intelligence (AI)</li>
+                    <li>Stanford AI in Healthcare Specialization</li>
+                    <li>DLAI Supervised Machine Learning</li>
+                    <li>Vanderbilt Prompt Engineering for ChatGPT Course</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Popular Career Certificates</h3>
+                <ul>
+                    <li>Adobe Content Creator Professional Certificate</li>
+                    <li>Google Cybersecurity Professional Certificate</li>
+                    <li>Google Data Analytics Professional Certificate</li>
+                    <li>Google Digital Marketing Professional Certificate</li>
+                    <li>Google IT Support Professional Certificate</li>
+                    <li>Google Project Management Professional Certificate</li>
+                    <li>Google UX Design Professional Certificate</li>
+                    <li>IBM Data Science Professional Certificate</li>
+                    <li>Meta Front-End Developer Professional Certificate</li>
+                    <li>Microsoft Power BI Data Analyst Certificate</li>
+                    <li>All Career Certificates</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Popular Subjects</h3>
+                <ul>
+                    <li>Artificial Intelligence</li>
+                    <li>Cybersecurity</li>
+                    <li>Data Analytics</li>
+                    <li>Digital Marketing</li>
+                    <li>Generative AI</li>
+                    <li>Graphic Design</li>
+                    <li>Machine Learning</li>
+                    <li>Microsoft Excel</li>
+                    <li>Microsoft Power BI</li>
+                    <li>Python</li>
+                    <li>SQL</li>
+                    <li>All Courses</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Popular Resources</h3>
+                <ul>
+                    <li>High-Income Skills Worth Learning</li>
+                    <li>How to Get a PMP Certification</li>
+                    <li>Free IT Certifications and Courses</li>
+                    <li>Google Analytics Certification Benefits</li>
+                    <li>Popular Cybersecurity Certifications</li>
+                    <li>Popular Data Analytics Certifications</li>
+                    <li>Popular IT Certifications</li>
+                    <li>What Does a Data Analyst Do?</li>
+                    <li>What Is the CAPM Certification</li>
+                    <li>Career Insights & Advice Hub</li>
+                    <li>Career Tools & Resource Hub</li>
+                    <li>Career Aptitude Test</li>
+                </ul>
+            </div>
+        </div>
+        <!--Above link to Font Awesome footer fb insta ... -->
+        <div class="footer-bottom">
+            <p>© 2025 TEJAS Inc. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,257 @@
+/* first footer */
+.footer1 {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    width: 84%;
+    margin-left: 7%;
+    font-size: 27px;
+}
+
+.footer {
+    background-color: #1a1a1a;
+    color: #d1d1d1;
+    padding: 40px 20px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .footer-column {
+    flex: 1 1 200px;
+    min-width: 150px;
+  }
+
+  .footer-column h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 27px;
+  }
+
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-column ul li {
+    margin: 8px 0;
+  }
+
+  .footer-column ul li a {
+    text-decoration: none;
+    color: #d1d1d1;
+    transition: color 0.3s;
+  }
+
+  .footer-column ul li a:hover {
+    color: #00aaff;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+    font-size: 14px;
+  }
+
+  .footer-bottom a {
+    color: #d1d1d1;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+
+  .footer-bottom a:hover {
+    color: #00aaff;
+  }
+
+
+
+  /* second footer */
+  .footer2 {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    width: 84%;
+    margin-left: 6%;
+    font-size: 27px;
+    background-color: #001a73;
+    color: #ffffff;
+}
+
+
+  .footer2-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 20px;
+  }
+
+  .footer2-column {
+    flex: 1 1 200px;
+    min-width: 150px;
+  }
+
+  .footer2-column h3 {
+    font-size: 27px;
+    margin-bottom: 10px;
+  }
+
+  .footer2-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer2-column ul li {
+    margin: 8px 0;
+  }
+
+  .footer2-column ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .footer2-column ul li a:hover {
+    color: #00aaff;
+  }
+
+  .footer2-download {
+    text-align: center;
+  }
+
+  .footer2-download img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .footer2-download a {
+    display: inline-block;
+    background-color: #00134d;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 21px;
+    margin-top: 10px;
+  }
+
+  .footer2-download a:hover {
+    background-color: #002080;
+  }
+
+  .footer2-bottom {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 21px;
+  }
+
+  .footer2-bottom a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+
+  .footer2-bottom a:hover {
+    color: #00aaff;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+  }
+
+  .social-icons a {
+    margin: 0 5px;
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  .social-icons a:hover {
+    color: #00aaff;
+  }
+
+
+  /*My website footer design here */
+  .footerr {
+    background-color: #5a5757;
+    padding: 20px 40px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+
+  .footerr-sections {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .footerr-column {
+    width: 23%;
+    margin-bottom: 20px;
+  }
+
+  .footerr-column h3 {
+    font-size: 4.8rem;
+    margin-bottom: 66px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .footerr-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footerr-column ul li {
+    font-size: 3rem;
+    line-height: 1.5;
+    color: white;
+  }
+
+  .footerr-bottom {
+    border-top: 1px solid #e6e6e6;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    color:white;
+  }
+
+  .footerr-bottom p {
+   font-size: 2.4rem;
+  }
+  
+
+  .sociall-icons{
+   display: flex;
+   gap: 90px;
+  }
+
+  .sociall-icons a {
+    margin-right: 10px;
+    font-size: 3.3rem;
+    color:white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    
+  }
+
+  .sociall-icons a:hover {
+    color: #fc04ca;
+   
+  }
+  
