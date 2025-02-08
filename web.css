@@ -529,6 +529,12 @@ p {
 
 
 /* responsive */
+@media(max-width:2440px){
+  html{
+    font-size: 39%;
+    
+  }
+}
 
 @media(max-width:1440px){
   html{
