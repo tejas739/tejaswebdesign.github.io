@@ -70,7 +70,7 @@ body {
 }
 
 .navbar .logo {
-  font-size: 9rem;
+  font-size: 6rem;
   font-weight: bold;
   color: rgb(249, 9, 185);
   font-family: 'Roboto Slab', serif;
@@ -85,7 +85,7 @@ body {
 .navbar .nav-links a {
   text-decoration: none;
   color: black;
-  font-size: 7rem;
+  font-size: 6rem;
   font-weight: bold;
 }
 
