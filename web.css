@@ -1,677 +1,596 @@
-     * {
-       margin: 0;
-       padding: 0;
-       box-sizing: border-box;
-     }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+   font-size: 62.5%;
+}
 
 
-     body {
-       margin: 0 auto;
-       padding: 0 32px;
-       min-width: 320px;
-       /* background-color: #f7f7f7; */
-       font-family: Arial, sans-serif;
-       /* background: linear-gradient(to bottom, #ffccff, #ffc6ff); */
-     }
-
-     /* header1 design */
-     .header {
-       background-color: #333;
-       /* Dark background */
-       color: #ddd;
-       /* Light text */
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-       padding: 10px 90px;
-       height: 9rem;
-     }
-
-     .header .info {
-       font-size: 40px;
-     }
-
-     .header .links {
-       display: flex;
-       gap: 100px;
-     }
-
-     .header .links a {
-       text-decoration: none;
-       color: #6495ED;
-       /* Blue color */
-       /* font-weight: bold; */
-       font-size: 50px;
-     }
-
-     .header .links a:hover {
-       color: #035afc;
-     }
-
-
-     /* navbar design */
-     .navbar {
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-       padding: 10px 90px;
-       background-color: #fff;
-       height: 15rem;
-     }
-
-     .navbar .logo {
-       font-size: 66px;
-       font-weight: bold;
-       color: rgb(249, 9, 185);
-       font-family: 'Roboto Slab', serif;
-       letter-spacing: 3px;
-     }
-
-     .navbar .nav-links {
-       display: flex;
-       gap: 90px;
-     }
-
-     .navbar .nav-links a {
-       text-decoration: none;
-       color: black;
-       font-size: 39px;
-       font-weight: bold;
-     }
-
-     .navbar .nav-links a:hover {
-       color: blue;
-     }
-
-     /* main design */
-     .container {
-       display: flex;
-       align-items: center;
-       justify-content: space-between;
-       padding: 5px 99px;
-       position: relative;
-       z-index: 1;
-       height: 99rem;
-       background-image: linear-gradient(to top right, #f70aef, #eb37df, #f167ff, #ffb3fb, #feebfe);
-     }
-
-     .text-content {
-       max-width: 50%;
-       color: #333;
-     }
-
-     .text-content h5 {
-       color: #1239fb;
-       text-transform: uppercase;
-       letter-spacing: 1px;
-       font-size: 39px;
-     }
-
-     .text-content h1 {
-       font-size: 114px;
-       color: #043afd;
-       margin: 84px 0;
-       font-family: "Jost";
-     }
-
-     .text-content p {
-       font-size: 33px;
-       line-height: 1.8;
-       color: white;
-     }
-
-     .text-content .btn {
-       display: inline-block;
-       margin-top: 72px;
-       padding: 30px;
-       background-color: #212322;
-       color: #fff;
-       border: none;
-       font-size: 54px;
-       border-radius: 6rem;
-       text-decoration: none;
-       cursor: pointer;
-       transition: background 0.3s;
-     }
-
-     .text-content .btn:hover {
-       background-color: white;
-       color: black;
-     }
-
-
-     .image-content img {
-       width: 1200px;
-       border-radius: 20px;
-       height: 900px;
-     }
-
-
-     .custom-shape-divider-bottom-1696038172 {
-       position: absolute;
-       bottom: 0;
-       left: 0;
-       width: 100%;
-       overflow: hidden;
-       line-height: 0;
-       transform: rotate(180deg);
-
-     }
-
-     .custom-shape-divider-bottom-1696038172 svg {
-       position: relative;
-       display: block;
-       width: calc(100% + 1.3px);
-     }
-
-     .custom-shape-divider-bottom-1696038172 .shape-fill {
-       fill: #ffffff;
-
-     }
-
-
-     .custom-shape-divider-bottom-1696038172 svg {
-       position: relative;
-       display: block;
-       width: calc(100% + 1.3px);
-       height: 15rem;
-     }
-
-
-     /* web design courses */
-     /* .containe {
-      margin-top: 54px;
-      padding: 10px 90px;
-    }
-
-    h1 {
-      font-size: 66px;
-      font-weight: bold;
-      color: #333;
-      margin-bottom: 24px;
-    }
-
-    h2 {
-      font-size: 39px;
-      font-weight: normal;
-      margin-bottom: 24px;
-      color: #666;
-    }
-
-    p{
-      font-size: 30px;
-    }
-
-    .tabs {
-      display: flex;
-      margin-bottom: 80px;
-      margin-top: 30px;
-      border-bottom: 2px solid #ddd;
-    }
-
-    .tab {
-      padding: 10px 20px;
-      font-weight: bold;
-      color: #333;
-      margin-right: 20px;
-      font-size: 30px;
-    }
-
-    .tab.active {
-      color: #007bff;
-      border-bottom: 2px solid #007bff;
-    }
-
-    .courses-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      width: 280rem;
-    }
-
-    
+body {
   
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  /* min-width: 320rem; */
+  /* background-color: #f7f7f7; */
+  font-family: Arial, sans-serif;
+  /* background: linear-gradient(to bottom, #ffccff, #ffc6ff); */
+} 
+
+/* .tejas{
+  overflow: hidden;
+} */
+
+/* header1 design */
+.header {
+  background-color: #333;
+  /* Dark background */
+  color: #ddd;
+  /* Light text */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12rem 9rem;
+  height: 12rem;
+}
+
+.header .info {
+  font-size: 6rem;
+}
+
+.header .links {
+  display: flex;
+  gap: 9rem;
+}
+
+.header .links a {
+  text-decoration: none;
+  color: #6495ED;
+  /* Blue color */
+  /* font-weight: bold; */
+  font-size: 5rem;
+}
+
+.header .links a:hover {
+  color: #035afc;
+}
+
+
+/* navbar design */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12rem 9rem;
+  background-color: #fff;
+  height: 45rem;
+  gap: 12rem;
+}
+
+.navbar .logo {
+  font-size: 9rem;
+  font-weight: bold;
+  color: rgb(249, 9, 185);
+  font-family: 'Roboto Slab', serif;
+  letter-spacing: .3rem;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 6rem;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 7rem;
+  font-weight: bold;
+}
+
+.navbar .nav-links a:hover {
+  color: blue;
+}
+
+/* main design */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 9.9rem;
+  position: relative;
+  z-index: 1;
+  height: 300rem;
+  background-image: linear-gradient(to top right, #f70aef, #eb37df, #f167ff, #ffb3fb, #feebfe);
+}
+
+.text-content {
+  max-width: 50%;
+  color: #333;
+}
+
+.text-content h5 {
+  color: #1239fb;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  font-size: 6.9rem;
+}
+
+.text-content h1 {
+  font-size: 18rem;
+  color: #043afd;
+  margin: 8.4rem 0;
+  font-family: "Jost";
+}
+
+.text-content p {
+  font-size: 6rem;
+  line-height: 1.8;
+  color: white;
+}
+
+.text-content .btn {
+  display: inline-block;
+  margin-top: 7.2rem;
+  padding: 3rem;
+  background-color: #212322;
+  color: #fff;
+  border: none;
+  font-size: 9rem;
+  border-radius: 9rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.text-content .btn:hover {
+  background-color: white;
+  color: black;
+}
+
+
+.image-content img {
+  width: 120rem;
+  border-radius: 2rem;
+  height: 180rem;
+ 
+}
+
+
+.custom-shape-divider-bottom-1696038172 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+
+}
+
+.custom-shape-divider-bottom-1696038172 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + .13rem);
+}
+
+.custom-shape-divider-bottom-1696038172 .shape-fill {
+  fill: #ffffff;
+
+}
+
+
+.custom-shape-divider-bottom-1696038172 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + .13rem);
+  height: 27rem;
+}
+
+
+/* web design courses */
+
+.containe {
+  margin-top: 18rem;
+  padding: 1rem 5%;
+  margin-left: 12%;
+}
+
+h1 {
+  font-size: 12rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 12rem;
+}
+
+h2 {
+  font-size: 9rem;
+  font-weight: normal;
+  margin-bottom: 6rem;
+  color: #666;
+}
+
+p {
+  font-size: 6rem;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 3rem;
+  margin-top: 9rem;
+  border-bottom: .2rem solid #ddd;
+  flex-wrap: wrap;
+}
+
+.tab {
+  padding: 1rem 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-right: 2rem;
+  font-size: 6rem;
+}
+
+.tab.active {
+  color: #007bff;
+  border-bottom: .2rem solid #007bff;
+}
+
+.courses-grid {
+  /* display: grid; */
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  margin-left: 3%;
+  width: 80%;
+  margin-top: 3rem;
+}
+
+.course-card {
+  background: #fff;
+  border: .1rem solid #ddd;
+  border-radius: .8rem;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+  width: 100%;
+  max-width: 600rem;
+  margin-top: 12rem;
+}
+
+.course-card:hover {
+  transform: translateY(-5rem);
+  box-shadow: 0 .4rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.course-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+}
+
+.course-info {
+  padding: 15rem;
+}
+
+.course-info h3 {
+  font-size: 9rem;
+  margin: 5rem 0;
+}
+
+.course-info p {
+  font-size: 9rem;
+  color: #666;
+  margin-top: .1rem;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin-top: .15rem;
+  font-size: 9rem;
+}
+
+.rating span {
+  margin-right: 5rem;
+}
+
+.stars {
+  color: #ffcc00;
+  margin-right: 5rem;
+}
+
+
+
+/* why choose web design */
+.containerr {
+  /* max-width: 250rem; */
+  margin: 0 auto;
+  padding: 2rem;
+  margin-top: 18rem;
+}
+
+/* Headline Section */
+.headline {
+  text-align: center;
+  font-size: 15rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.headline span {
+  color: #007BFF;
+  /* Highlighted part */
+}
+
+/* Image Section */
+.intro-section {
+  text-align: center;
+  background-color: #fff;
+  padding: 9rem;
+  box-shadow: 0 .4rem .8rem rgba(0, 0, 0, 0.1);
+  border-radius: 9rem;
+
+}
+
+.intro-section img {
+  width: 180rem;
+  height: 150rem;
+  margin: 3rem auto 6rem;
+  display: block;
+  border-radius: .8rem;
+}
+
+/* Paragraph Styles */
+.intro-section p {
+  font-size: 9rem;
+  margin-top: 1rem;
+  color: #666;
+  text-align: justify;
+
+}
+
+.intro-section strong {
+  color: #333;
+}
+
+
+
+
+/* top companies trust */
+.trusted-companies {
+  /* border: 1rem solid #e6e6e6;
+ border-radius: 8rem; */
+  padding: 2rem;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  margin: 20rem auto;
+}
+
+.trusted-companies h2 {
+  font-size: 12rem;
+  margin-bottom: 6rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.trusted-companies p {
+  font-size: 6rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.company-logos {
+  display: flex;
+  justify-content: center;
+  gap: 12rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.company-logos img {
+  height: 60rem;
+  width: 60rem;
+  object-fit: contain;
+}
+
+.tejas-button {
+  background-color: #fff;
+  border: .1rem solid #000;
+  border-radius: 9rem;
+  padding: 1rem 2rem;
+  font-size: 9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tejas-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+
+/* design and source code here */
+.buttonn-container h1 {
+  font-size: 11rem;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  text-align: center;
+}
+
+.buttonn-container {
+  display: flex;
+  flex-direction: column;
+  /* Arrange buttons vertically */
+  gap: 9rem;
+  /* Space between buttons */
+  margin-bottom: 30rem;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.buttonn {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 6rem;
+  transition: background-color 0.3s ease;
+  font-size: 6.9rem;
+  text-align: center;
+  width: 60%;
+  
+}
+
+.buttonn:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+/* footer design here */
+.footer {
+  background-color: #5a5757;
+  padding: 2rem 4rem;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.footer-sections {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.footer-column {
+  width: 23%;
+  margin-bottom: 2rem;
+}
+
+.footer-column h3 {
+  font-size: 9rem;
+  margin-bottom: 6.6rem;
+  font-weight: bold;
+  color: white;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  font-size: 6rem;
+  line-height: 9rem;
+  color: white;
+}
+
+.footer-bottom {
+  border-top: .1rem solid #e6e6e6;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 19rem;
+  color: white;
+}
+
+.footer-bottom p {
+  font-size: 9rem;
+}
+
+
+.social-icons {
+  display: flex;
+  gap: 9rem;
+}
+
+.social-icons a {
+  margin-right: 1rem;
+  font-size: 6rem;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+}
+
+.social-icons a:hover {
+  color: #fc04ca;
+
+}
+
+
+
+/* responsive */
+
+@media(max-width:1440px){
+  html{
+    font-size: 36%;
+    
+  }
+}
+
+@media(max-width:1024px){
+  html{
+    font-size: 30%;
+    
+  }
+}
+
+@media(max-width:886px){
+  html{
+    font-size: 24%;
+  }
+}
+
+
+@media(max-width:786px){
+  html{
+    font-size: 21%;
+  }
+}
+
+@media (max-width: 912px) {
+  html {
+    font-size: 21%;
+  }
+}
+
+@media (max-width: 625px) {
+  html {
+    font-size: 15%;
+  }
+}
+
+@media (max-width: 525px) {
+  html {
+    font-size: 12%;
+  }
+}
+
+@media (max-width: 425px) {
+  html {
+    font-size: 9%;
+  }
+}
+
+
+
+@media(max-width:320px){
+  html{
+    font-size: 9%;
+    
+  }
+}
 
-    .course-card {
-      background: #fff;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      overflow: hidden;
-      transition: transform 0.2s ease;
-      width: 60rem;
-      height: 78rem;
-    }
-
-    .course-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .course-card img {
-      width: 60rem;
-      height: 60rem;
-    }
-
-    .course-info {
-      padding: 15px;
-    }
-
-    .course-info h3 {
-      font-size: 48px;
-      margin: 5px 0;
-    }
-
-    .course-info p {
-      font-size: 39px;
-      color: #666;
-      margin-top: 30px;
-    }
-
-    .rating {
-      display: flex;
-      align-items: center;
-      margin-top: 33px;
-      font-size: 40px;
-    }
-
-    .rating span {
-      margin-right: 5px;
-    }
-
-    .stars {
-      color: #ffcc00;
-      margin-right: 5px;
-    } 
-
-
-     */
-
-
-     .containe {
-       margin-top: 54px;
-       padding: 10px 5%;
-     }
-
-     h1 {
-       font-size: 6rem;
-       font-weight: bold;
-       color: #333;
-       margin-bottom: 1.5rem;
-     }
-
-     h2 {
-       font-size: 3rem;
-       font-weight: normal;
-       margin-bottom: 1.5rem;
-       color: #666;
-     }
-
-     p {
-       font-size: 1.5rem;
-     }
-
-     .tabs {
-       display: flex;
-       margin-bottom: 3rem;
-       margin-top: 1.5rem;
-       border-bottom: 2px solid #ddd;
-       flex-wrap: wrap;
-     }
-
-     .tab {
-       padding: 10px 20px;
-       font-weight: bold;
-       color: #333;
-       margin-right: 20px;
-       font-size: 2.1rem;
-     }
-
-     .tab.active {
-       color: #007bff;
-       border-bottom: 2px solid #007bff;
-     }
-
-     .courses-grid {
-       display: grid;
-       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-       gap: 2rem;
-       width: 100%;
-       margin-top: 2rem;
-     }
-
-     .course-card {
-       background: #fff;
-       border: 1px solid #ddd;
-       border-radius: 8px;
-       overflow: hidden;
-       transition: transform 0.2s ease;
-       width: 100%;
-       max-width: 60rem;
-     }
-
-     .course-card:hover {
-       transform: translateY(-5px);
-       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-     }
-
-     .course-card img {
-       width: 100%;
-       height: auto;
-       aspect-ratio: 1/1;
-     }
-
-     .course-info {
-       padding: 15px;
-     }
-
-     .course-info h3 {
-       font-size: 3rem;
-       margin: 5px 0;
-     }
-
-     .course-info p {
-       font-size: 2.8rem;
-       color: #666;
-       margin-top: 1rem;
-     }
-
-     .rating {
-       display: flex;
-       align-items: center;
-       margin-top: 1.5rem;
-       font-size: 2.5rem;
-     }
-
-     .rating span {
-       margin-right: 5px;
-     }
-
-     .stars {
-       color: #ffcc00;
-       margin-right: 5px;
-     }
-
-     /* Media Queries */
-     @media (max-width: 768px) {
-       h1 {
-         font-size: 4rem;
-       }
-
-       h2 {
-         font-size: 2.5rem;
-       }
-
-       p {
-         font-size: 1.2rem;
-       }
-
-       .tab {
-         font-size: 1.5rem;
-         margin-right: 10px;
-       }
-
-       .course-info h3 {
-         font-size: 1.8rem;
-       }
-
-       .course-info p {
-         font-size: 1.5rem;
-       }
-
-       .rating {
-         font-size: 1.2rem;
-       }
-     }
-
-     @media (max-width: 480px) {
-       h1 {
-         font-size: 3rem;
-       }
-
-       h2 {
-         font-size: 2rem;
-       }
-
-       .tab {
-         font-size: 1.2rem;
-         padding: 5px 10px;
-       }
-
-       .course-info h3 {
-         font-size: 1.5rem;
-       }
-
-       .course-info p {
-         font-size: 1.2rem;
-       }
-
-       .rating {
-         font-size: 1rem;
-       }
-     }
-
-
-     /* why choose web design */
-     .containerr {
-       /* max-width: 250rem; */
-       margin: 0 auto;
-       padding: 20px;
-       margin-top: 12rem;
-     }
-
-     /* Headline Section */
-     .headline {
-       text-align: center;
-       font-size: 99px;
-       font-weight: bold;
-       margin-bottom: 30px;
-       color: #333;
-     }
-
-     .headline span {
-       color: #007BFF;
-       /* Highlighted part */
-     }
-
-     /* Image Section */
-     .intro-section {
-       text-align: center;
-       background-color: #fff;
-       padding: 20px;
-       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-       border-radius: 8px;
-
-     }
-
-     .intro-section img {
-       width: 120rem;
-       margin: 30px auto 60px;
-       display: block;
-       border-radius: 8px;
-     }
-
-     /* Paragraph Styles */
-     .intro-section p {
-       font-size: 50px;
-       margin-top: 10px;
-       color: #666;
-       text-align: justify;
-     }
-
-     .intro-section strong {
-       color: #333;
-     }
-
-
-
-
-     /* top companies trust */
-     .trusted-companies {
-       /* border: 1px solid #e6e6e6;
-      border-radius: 8px; */
-       padding: 20px;
-       text-align: center;
-       font-family: Arial, sans-serif;
-       background-color: #fff;
-       margin: 200px auto;
-     }
-
-     .trusted-companies h2 {
-       font-size: 9.5rem;
-       margin-bottom: 30px;
-       font-weight: bold;
-       color: #333;
-     }
-
-     .trusted-companies p {
-       font-size: 3rem;
-       color: #666;
-       margin-bottom: 20px;
-     }
-
-     .company-logos {
-       display: flex;
-       justify-content: center;
-       gap: 200px;
-       flex-wrap: wrap;
-       margin-bottom: 20px;
-     }
-
-     .company-logos img {
-       height: 400px;
-       width: 300px;
-       object-fit: contain;
-     }
-
-     .tejas-button {
-       background-color: #fff;
-       border: 1px solid #000;
-       border-radius: 30px;
-       padding: 10px 20px;
-       font-size: 3rem;
-       font-weight: bold;
-       cursor: pointer;
-       transition: all 0.3s ease;
-     }
-
-     .tejas-button:hover {
-       background-color: #000;
-       color: #fff;
-     }
-
-
-     /* design and source code here */
-     .buttonn-container h1 {
-       font-size: 72px;
-       color: #333;
-       margin-bottom: 20px;
-       text-transform: uppercase;
-       letter-spacing: 2px;
-       text-align: center;
-     }
-
-     .buttonn-container {
-       display: flex;
-       flex-direction: column;
-       /* Arrange buttons vertically */
-       gap: 90px;
-       /* Space between buttons */
-       margin-bottom: 30rem;
-       margin-top: 30rem;
-       align-items: center;
-     }
-
-     .buttonn {
-       text-decoration: none;
-       padding: 10px 20px;
-       background-color: #007BFF;
-       color: white;
-       border-radius: 5px;
-       transition: background-color 0.3s ease;
-       font-size: 66px;
-       text-align: center;
-       width: 60%;
-       
-     }
-
-     .buttonn:hover {
-       background-color: #0056b3;
-     }
-
-
-
-
-     /* footer design here */
-     .footer {
-       background-color: #5a5757;
-       padding: 20px 40px;
-       font-family: Arial, sans-serif;
-       color: #333;
-     }
-
-     .footer-sections {
-       display: flex;
-       justify-content: space-between;
-       flex-wrap: wrap;
-       margin-bottom: 20px;
-       padding-top: 100px;
-       padding-bottom: 100px;
-     }
-
-     .footer-column {
-       width: 23%;
-       margin-bottom: 20px;
-     }
-
-     .footer-column h3 {
-       font-size: 4.8rem;
-       margin-bottom: 66px;
-       font-weight: bold;
-       color: white;
-     }
-
-     .footer-column ul {
-       list-style: none;
-       padding: 0;
-       margin: 0;
-     }
-
-     .footer-column ul li {
-       font-size: 3rem;
-       line-height: 1.5;
-       color: white;
-     }
-
-     .footer-bottom {
-       border-top: 1px solid #e6e6e6;
-       padding-top: 100px;
-       padding-bottom: 100px;
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-       font-size: 0.9rem;
-       color: white;
-     }
-
-     .footer-bottom p {
-       font-size: 2.4rem;
-     }
-
-
-     .social-icons {
-       display: flex;
-       gap: 90px;
-     }
-
-     .social-icons a {
-       margin-right: 10px;
-       font-size: 3.3rem;
-       color: white;
-       text-decoration: none;
-       transition: color 0.3s ease;
-
-     }
-
-     .social-icons a:hover {
-       color: #fc04ca;
-
-     }
+
+
+
+
