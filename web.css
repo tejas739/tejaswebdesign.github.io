@@ -529,9 +529,21 @@ p {
 
 
 /* responsive */
+@media(max-width:3440px){
+  html{
+    font-size: 39%;
+    
+  }
+}
 @media(max-width:2440px){
   html{
     font-size: 39%;
+    
+  }
+}
+@media(max-width:1540px){
+  html{
+    font-size: 36%;
     
   }
 }
@@ -539,6 +551,20 @@ p {
 @media(max-width:1440px){
   html{
     font-size: 36%;
+    
+  }
+}
+
+@media(max-width:1340px){
+  html{
+    font-size: 33%;
+    
+  }
+}
+
+@media(max-width:1145px){
+  html{
+    font-size: 33%;
     
   }
 }
