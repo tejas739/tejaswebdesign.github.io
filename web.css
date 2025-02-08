@@ -529,13 +529,29 @@ p {
 
 
 /* responsive */
-@media(max-width:3440px){
+
+
+@media(max-width:2220px){
   html{
     font-size: 39%;
     
   }
 }
-@media(max-width:2440px){
+
+@media(max-width:2120px){
+  html{
+    font-size: 39%;
+    
+  }
+}
+
+@media(max-width:2020px){
+  html{
+    font-size: 39%;
+    
+  }
+}
+@media(max-width:1920px){
   html{
     font-size: 39%;
     
