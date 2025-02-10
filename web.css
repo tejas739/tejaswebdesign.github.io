@@ -402,6 +402,7 @@ p {
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .tejas-button:hover {
